@@ -1,0 +1,108 @@
+!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>rdi empire bot</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- এখানে monitag sdk বসাবে -->
+<script src="এখানে_monetag_sdk_url_দিবে"></script>
+<!-- monitag sdk এখানেই শেষ -->
+
+<style>
+body{
+  margin:0;
+  background:#0b0f1a;
+  color:#ffffff;
+  font-family:arial;
+}
+
+.header{
+  padding:15px;
+  text-align:center;
+  font-size:18px;
+}
+
+.balance{
+  background:linear-gradient(135deg,#6a11cb,#2575fc);
+  margin:15px;
+  padding:15px;
+  border-radius:15px;
+}
+
+.card{
+  background:#151a2e;
+  margin:15px;
+  padding:15px;
+  border-radius:15px;
+}
+
+.btn{
+  width:100%;
+  padding:15px;
+  border:none;
+  border-radius:12px;
+  background:#7c4dff;
+  color:#ffffff;
+  font-size:16px;
+}
+
+.bottom{
+  position:fixed;
+  bottom:0;
+  left:0;
+  right:0;
+  background:#0f142b;
+  display:flex;
+  justify-content:space-around;
+  padding:10px 0;
+  font-size:12px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="header">rdi empire bot</div>
+
+<!-- balance section -->
+<div class="balance">
+  <div>id: <span id="userid">loading</span></div>
+  <div>balance: 5.00 rdi</div>
+</div>
+
+<!-- ads section -->
+<div class="card">
+  <div>watch ads & earn</div>
+  <br>
+
+  <!-- ad দেখানোর বাটন -->
+  <button class="btn" onclick="showad()">▶ watch ad now</button>
+</div>
+
+<!-- bottom menu -->
+<div class="bottom">
+  <div>task</div>
+  <div>cards</div>
+  <div>invite</div>
+  <div>withdraw</div>
+</div>
+
+<script>
+  // এখানে telegram webapp চালু হচ্ছে
+  const tg = window.telegram.webapp;
+  tg.ready();
+
+  // এখানে telegram user id পাওয়া যাচ্ছে
+  const user_id = tg.initdataunsafe.user.id;
+
+  // screen এ user id দেখানো হচ্ছে
+  document.getelementbyid("userid").innerhtml = user_id;
+
+  // ad show function
+  function showad(){
+    // এখানে monitag ad show করার কোড বসাবে
+    // উদাহরণ: monetag.show()
+
+    alert("এখানে monitag ad দেখাবে");
+  }
