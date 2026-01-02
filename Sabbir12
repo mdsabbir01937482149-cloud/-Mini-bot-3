@@ -5,7 +5,7 @@
 <title>rdi empire bot</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- এখানে monitag sdk বসাবে -->
+<!-- <script src='//libtl.com/sdk.js' data-zone='10402841' data-sdk='show_10402841'></script> -->
 <script src="এখানে_monetag_sdk_url_দিবে"></script>
 <!-- monitag sdk এখানেই শেষ -->
 
@@ -101,7 +101,7 @@ body{
 
   // ad show function
   function showad(){
-    // এখানে monitag ad show করার কোড বসাবে
+    // এখানে monitag ad 10402841
     // উদাহরণ: monetag.show()
 
     alert("এখানে monitag ad দেখাবে");
